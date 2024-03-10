@@ -10,7 +10,7 @@ public class GuessNumberGame {
     public int L;
 
     public int randomNumber;
-    
+
     public static void main(String[] args) {
         try {
             GuessNumberGame game = new GuessNumberGame(args.length > 0 ? args[0] : "");
@@ -79,7 +79,6 @@ public class GuessNumberGame {
     }
 
     public void progressBar(int Attempt){
-        //System.out.println(L);
         System.out.println("Twoje proby: [" + "*".repeat(Math.max(1, Attempt+1)) + ".".repeat(Math.max(0, L - Attempt-1)) + "]");
     }
 }
