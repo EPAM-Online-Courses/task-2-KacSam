@@ -27,6 +27,7 @@ public class GuessNumberGame {
 
             if (M < 1 || M > 400){
                 System.out.println(UsefulConstants.WRONG_ARGUMENT);
+
                 throw new java.lang.IllegalArgumentException("out of range");
             }
         }
