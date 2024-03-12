@@ -27,12 +27,12 @@ public class GuessNumberGame {
 
             if (M < 1 || M > 400){
                 System.out.println(UsefulConstants.WRONG_ARGUMENT);
-                throw new java.lang.IllegalArgumentException(UsefulConstants.WRONG_ARGUMENT);
+                throw new java.lang.IllegalArgumentException("out of range");
             }
         }
         catch (NumberFormatException e){
             System.out.println(UsefulConstants.WRONG_ARGUMENT);
-            throw new IllegalArgumentException(UsefulConstants.WRONG_ARGUMENT);
+            throw new IllegalArgumentException(" - not a number");
         }
         this.L = (int)(Math.log(M)/Math.log(2))+1;
         Random random = new Random();
